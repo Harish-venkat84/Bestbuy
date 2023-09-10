@@ -4,7 +4,8 @@
 	<!-- while running this XML file don't move your mouse and don't use your keyboard-->
 	<test name="Test" thread-count="5">
 		<classes>
-			<class name="com.bestbuy.test.HooksWithChromeCache"/>
+			<class name="com.bestbuy.test.HooksWithOutChromeCache"/>
+			<class name="com.bestbuy.test.ChooseCountry" />
 			<class name="com.bestbuy.test.Menu" />
 			<class name="com.bestbuy.utils.Reports" />
 		</classes>

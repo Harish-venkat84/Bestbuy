@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <parameter name="firstName" value="Santhosh"/>
-  <parameter name="lastName" value="K"/>
-  <parameter name="errorMessagge" value="Sorry, something went wrong. Please try again."/>
-  <parameter name="password" value="423329@HarishV"/>
-  <parameter name="mobileNumber" value="8807955398"/>
-  <parameter name="mailID" value="harish.venkatesan12023@gmail.com"/>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.bestbuy.test.SingUp">
+      <class name="com.bestbuy.test.MenuShopByDepartment">
         <methods>
-          <include name="CreateNewAccount" invocation-numbers="0"/>
+          <include name="selectByDepartment"/>
         </methods>
-      </class> <!-- com.bestbuy.test.SingUp -->
+      </class> <!-- com.bestbuy.test.MenuShopByDepartment -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
