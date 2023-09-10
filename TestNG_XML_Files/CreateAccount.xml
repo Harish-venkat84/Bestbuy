@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<parameter name="firstName" value="Santhosh"></parameter>
+	<parameter name="lastName" value="K"></parameter>
+	<parameter name="mailID" value="harish.venkatesan12023@gmail.com"></parameter>
+	<parameter name="password" value="423329@HarishV"></parameter>
+	<parameter name="mobileNumber" value="8807955398"></parameter>
+	<parameter name="errorMessagge"
+		value="An account with this email already exists."></parameter>
+
+	<test thread-count="5" name="Test">
+		<classes>
+			<class name="com.bestbuy.test.HooksWithOutChromeCache" />
+			<class name="com.bestbuy.test.ChooseCountry" />
+			<class name="com.bestbuy.test.SingUp" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->
