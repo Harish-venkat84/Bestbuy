@@ -52,7 +52,7 @@ public class BaseUtils {
 	
 	// this method is user for browser launch
 	// parameter ==> (browser -> name), (url -> application url)
-	public static WebDriver launchBrowserWithOutChromeCache(String browser, String url) {
+	public static WebDriver launchBrowser(String browser, String url, String headLess, String cache) {
 		
 		try {
 			
@@ -63,7 +63,16 @@ public class BaseUtils {
 			option.addArguments("--disable-notifications");
 			option.addArguments("--disable-geolocation");
 			
-//			option.addArguments("--headless=new");
+			if (headLess.equalsIgnoreCase("HeadLess")) {
+				
+				option.addArguments("--headless=new");
+			}
+			
+			if (cache.equalsIgnoreCase("cache")) {
+				
+				option.addArguments("user-data-dir="+ System.getProperty("user.dir")+"/ChromeData");
+			}
+
 			driver = new ChromeDriver(option);
 			
 		} else if (browser.equalsIgnoreCase("Edge")) {
@@ -95,52 +104,6 @@ public class BaseUtils {
 		return driver;
 	}
 	
-	
-	// this method is user for browser launch
-		// parameter ==> (browser -> name), (url -> application url)
-		public static WebDriver launchBrowserWithChromeCache(String browser, String url) {
-			
-			try {
-				
-				Reports.setTCDesc("Validating Browser launch functionality");
-			
-			if (browser.equalsIgnoreCase("Chrome")) {
-				
-				option.addArguments("--disable-notifications");
-				option.addArguments("--disable-geolocation");
-				
-				option.addArguments("user-data-dir="+ System.getProperty("user.dir")+"/ChromeData");
-				
-				driver = new ChromeDriver(option);
-				
-			} else if (browser.equalsIgnoreCase("Edge")) {
-
-				driver = new EdgeDriver();
-				
-			} else if (browser.equalsIgnoreCase("Firefox")) {
-				
-				driver = new FirefoxDriver();
-			}
-			
-			driver.manage().window().maximize();
-			
-			driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-			
-			driver.get(url);
-			
-			pom = new PageObjectManager(driver);
-			
-			Reports.reportStep(Status.PASS, "Browser launch successfully login "+url);
-			
-			}catch(Exception ex) {
-				
-				Reports.reportStep(Status.FAIL, "failed to launch Browser "+url);
-				System.out.println("problem on launching browser");
-				ex.printStackTrace();
-			}
-			
-			return driver;
-		}
 	
 	// this method is used to enter text to the input field like search box, mail id field, password field, etc...
 	// parameters => (element, text)

@@ -11,9 +11,9 @@ import com.bestbuy.utils.Reports;
 
 public class LogIn extends BaseUtils{
 
-	@Test
-	@Parameters({"tryAgainMessage", "noMessage"})
-	public void sigin(String tryAgainMessage, String noMessage) {
+	@Test(priority = 1)
+	@Parameters({"errorMessage", "errorMessage2"})
+	public void sigin(String errorMessage, String errorMessage2) {
 		
 		LoginTestCase loginCase = new LoginTestCase();
 		
@@ -33,21 +33,23 @@ public class LogIn extends BaseUtils{
 			
 			clickElement(pom.getSignIn().getSignIn(), loginCase.getSigInButtonPass(), loginCase.getSigInButtonFail());
 			
-			if (noMessage.equals("fail")) {
-				
-				waitTextPresent(pom.getSignIn().getErrorMessage(), tryAgainMessage);
+			String message = null;
 			
-				if(getElementText(pom.getSignIn().getErrorMessage()).equals(tryAgainMessage)) {
-					
+			if (pom.getSignIn().getErrorMessage().isDisplayed()) {
+				
+				message = getElementText(pom.getSignIn().getErrorMessage());
+			}
+			
+			if (message.equals(errorMessage) || message.equals(errorMessage2)) {
+				
 					Reports.reportStep(Status.FAIL, "login fail");
 					
-				}
-				
 			}else {
 				
 				Reports.reportStep(Status.PASS, "successfully login");
 			}
 			
+//			launchNewURL(property.getURL());
 		
 		}catch(Exception e) {
 			

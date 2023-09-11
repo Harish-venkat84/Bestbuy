@@ -14,12 +14,12 @@ public class Reports {
 	public static ExtentReports extentReport;
 	public static ExtentTest extentTest;
 	
-	public static void startReport() {
+	public static void startReport(String reportName) {
 		
 		
 		try {
 			
-			sparkReport = new ExtentSparkReporter(System.getProperty("user.dir") + "/WebAutomationReport.html");
+			sparkReport = new ExtentSparkReporter(System.getProperty("user.dir") + "/Reports/"+reportName+"Report.html");
 			
 			sparkReport.config().setDocumentTitle("Bestbuy Web Automation Report");
 			

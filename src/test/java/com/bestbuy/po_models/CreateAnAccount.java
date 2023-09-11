@@ -39,11 +39,8 @@ public class CreateAnAccount {
 	@FindBy(xpath = "//button[text() = 'Create an Account']")
 	private WebElement createAccountBtn;
 	
-	@FindBy(xpath = "//div[text() = 'Sorry, something went wrong. Please try again.']")
+	@FindBy(xpath = "//strong//child::div//child::div//child::strong")
 	private WebElement errorMessage;
-	
-	@FindBy(xpath = "//strong[text() = 'An account with this email already exists.']")
-	private WebElement emailAlredyExists;
 	
 	public CreateAnAccount(WebDriver driver2) {
 

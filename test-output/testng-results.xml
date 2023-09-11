@@ -1,33 +1,633 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="19" passed="17" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-10T23:13:15 IST" name="Suite" finished-at="2023-09-10T23:13:47 IST" duration-ms="31807">
+  <suite started-at="2023-09-11T17:31:50 IST" name="Suite" finished-at="2023-09-11T17:31:50 IST" duration-ms="0">
     <groups>
     </groups>
-    <test started-at="2023-09-10T23:13:15 IST" name="Test" finished-at="2023-09-10T23:13:47 IST" duration-ms="31807">
-      <class name="com.bestbuy.test.HooksWithOutChromeCache">
-        <test-method is-config="true" signature="launchURL()[pri:0, instance:com.bestbuy.test.HooksWithOutChromeCache@29e6eb25]" started-at="2023-09-10T23:13:10 IST" name="launchURL" finished-at="2023-09-10T23:13:15 IST" duration-ms="4611" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- launchURL -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.HooksWithOutChromeCache@29e6eb25]" started-at="2023-09-10T23:13:47 IST" name="quit" finished-at="2023-09-10T23:13:53 IST" duration-ms="5914" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- quit -->
-      </class> <!-- com.bestbuy.test.HooksWithOutChromeCache -->
+  </suite> <!-- Suite -->
+  <suite started-at="2023-09-11T16:57:57 IST" name="Suite (1)" finished-at="2023-09-11T16:58:27 IST" duration-ms="30100">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T16:57:57 IST" name="Create New Account" finished-at="2023-09-11T16:58:27 IST" duration-ms="30100">
       <class name="com.bestbuy.test.ChooseCountry">
-        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@21aa6d6c]" started-at="2023-09-10T23:13:15 IST" name="selectCountry" finished-at="2023-09-10T23:13:24 IST" duration-ms="9052" status="PASS">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@4275c20c]" started-at="2023-09-11T16:57:57 IST" name="selectCountry" finished-at="2023-09-11T16:58:17 IST" duration-ms="19484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCountry -->
       </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.SingUp">
+        <test-method signature="CreateNewAccount(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:2, instance:com.bestbuy.test.SingUp@3fc9dfc5]" started-at="2023-09-11T16:58:17 IST" name="CreateNewAccount" finished-at="2023-09-11T16:58:27 IST" duration-ms="10109" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Santhosh]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[K]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[harish.venkatesan120231@gmail.com]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[423329@HarishV]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[8807955398]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[An account with this email already exists.]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[Sorry, there was a problem creating your account.]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='c-overlay bottom preferred-store-notification']"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [586d6222c3fca35ce3d3ddc5ef867864, findElement {using=xpath, value=//div[@class='c-overlay bottom preferred-store-notification']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Sathish\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62573/devtoo..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 586d6222c3fca35ce3d3ddc5ef867864]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='c-overlay bottom preferred-store-notification']"}
+  (Session info: chrome=116.0.5845.180)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.12.1', revision: '8e34639b11'
+System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.8.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [586d6222c3fca35ce3d3ddc5ef867864, findElement {using=xpath, value=//div[@class='c-overlay bottom preferred-store-notification']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 116.0.5845.180, chrome: {chromedriverVersion: 116.0.5845.96 (1a3918166880..., userDataDir: C:\Users\Sathish\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62573}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62573/devtoo..., se:cdpVersion: 116.0.5845.180, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 586d6222c3fca35ce3d3ddc5ef867864
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:359)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:353)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at jdk.proxy2/jdk.proxy2.$Proxy21.isDisplayed(Unknown Source)
+at com.bestbuy.test.SingUp.CreateNewAccount(SingUp.java:24)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateNewAccount -->
+      </class> <!-- com.bestbuy.test.SingUp -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@34a97744]" started-at="2023-09-11T16:57:52 IST" name="launchURL" finished-at="2023-09-11T16:57:57 IST" duration-ms="4841" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[CreateAccount]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@34a97744]" started-at="2023-09-11T16:58:27 IST" name="quit" finished-at="2023-09-11T16:58:27 IST" duration-ms="489" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
+    </test> <!-- Create New Account -->
+  </suite> <!-- Suite (1) -->
+  <suite started-at="2023-09-11T16:57:09 IST" name="Suite (0)" finished-at="2023-09-11T16:57:52 IST" duration-ms="43402">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T16:57:09 IST" name="Login" finished-at="2023-09-11T16:57:52 IST" duration-ms="43402">
+      <class name="com.bestbuy.test.ChooseCountry">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@458342d3]" started-at="2023-09-11T16:57:09 IST" name="selectCountry" finished-at="2023-09-11T16:57:19 IST" duration-ms="10495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+      </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.LogIn">
+        <test-method signature="sigin(java.lang.String,java.lang.String)[pri:1, instance:com.bestbuy.test.LogIn@15c25153]" started-at="2023-09-11T16:57:19 IST" name="sigin" finished-at="2023-09-11T16:57:51 IST" duration-ms="31903" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Sorry, something went wrong. Please try again.]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Oops! The email or password did not match our records. Please try again.]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sigin -->
+      </class> <!-- com.bestbuy.test.LogIn -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@31e75d13]" started-at="2023-09-11T16:57:03 IST" name="launchURL" finished-at="2023-09-11T16:57:09 IST" duration-ms="5929" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Login]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@31e75d13]" started-at="2023-09-11T16:57:51 IST" name="quit" finished-at="2023-09-11T16:57:52 IST" duration-ms="931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
+    </test> <!-- Login -->
+  </suite> <!-- Suite (0) -->
+  <suite started-at="2023-09-11T17:10:50 IST" name="Suite (8)" finished-at="2023-09-11T17:31:50 IST" duration-ms="1259385">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T17:10:50 IST" name="Validating Menu Title" finished-at="2023-09-11T17:31:50 IST" duration-ms="1259385">
+      <class name="com.bestbuy.test.Menu">
+        <test-method signature="menuFirst_ThreeButton()[pri:0, instance:com.bestbuy.test.Menu@3a94964]" started-at="2023-09-11T17:10:57 IST" name="menuFirst_ThreeButton" finished-at="2023-09-11T17:31:49 IST" duration-ms="1251411" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- menuFirst_ThreeButton -->
+      </class> <!-- com.bestbuy.test.Menu -->
+      <class name="com.bestbuy.test.ChooseCountry">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@7a48e6e2]" started-at="2023-09-11T17:10:50 IST" name="selectCountry" finished-at="2023-09-11T17:10:57 IST" duration-ms="7014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+      </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@4ae33a11]" started-at="2023-09-11T17:10:46 IST" name="launchURL" finished-at="2023-09-11T17:10:50 IST" duration-ms="4469" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[MenuList]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@4ae33a11]" started-at="2023-09-11T17:31:49 IST" name="quit" finished-at="2023-09-11T17:31:50 IST" duration-ms="953" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
+    </test> <!-- Validating Menu Title -->
+  </suite> <!-- Suite (8) -->
+  <suite started-at="2023-09-11T17:04:03 IST" name="Suite (7)" finished-at="2023-09-11T17:10:46 IST" duration-ms="403060">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T17:04:03 IST" name="Bottom Link Validation" finished-at="2023-09-11T17:10:46 IST" duration-ms="403060">
+      <class name="com.bestbuy.test.BottomLinksValidation">
+        <test-method signature="validatingBottomLinks()[pri:1, instance:com.bestbuy.test.BottomLinksValidation@7c7d3c46]" started-at="2023-09-11T17:04:12 IST" name="validatingBottomLinks" finished-at="2023-09-11T17:10:45 IST" duration-ms="393296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingBottomLinks -->
+      </class> <!-- com.bestbuy.test.BottomLinksValidation -->
+      <class name="com.bestbuy.test.ChooseCountry">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@18245eb0]" started-at="2023-09-11T17:04:03 IST" name="selectCountry" finished-at="2023-09-11T17:04:12 IST" duration-ms="9209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+      </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@7383eae2]" started-at="2023-09-11T17:03:59 IST" name="launchURL" finished-at="2023-09-11T17:04:03 IST" duration-ms="3596" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[BottomLinksValidation]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@7383eae2]" started-at="2023-09-11T17:10:45 IST" name="quit" finished-at="2023-09-11T17:10:46 IST" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
+    </test> <!-- Bottom Link Validation -->
+  </suite> <!-- Suite (7) -->
+  <suite started-at="2023-09-11T17:03:48 IST" name="Suite (6)" finished-at="2023-09-11T17:03:59 IST" duration-ms="11278">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T17:03:48 IST" name="Validating Base URL" finished-at="2023-09-11T17:03:59 IST" duration-ms="11278">
+      <class name="com.bestbuy.test.ChooseCountry">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@7db82169]" started-at="2023-09-11T17:03:48 IST" name="selectCountry" finished-at="2023-09-11T17:03:59 IST" duration-ms="10831" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+      </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.ValidatingURL">
+        <test-method signature="verifyingURL()[pri:0, instance:com.bestbuy.test.ValidatingURL@1992eaf4]" started-at="2023-09-11T17:03:59 IST" name="verifyingURL" finished-at="2023-09-11T17:03:59 IST" duration-ms="36" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [https://www.bestbuy.com/] but found [https://www.bestbuy.com/?intl=nosplash]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [https://www.bestbuy.com/] but found [https://www.bestbuy.com/?intl=nosplash]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.bestbuy.test.ValidatingURL.verifyingURL(ValidatingURL.java:21)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1275)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyingURL -->
+      </class> <!-- com.bestbuy.test.ValidatingURL -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@1cd201a8]" started-at="2023-09-11T17:03:44 IST" name="launchURL" finished-at="2023-09-11T17:03:48 IST" duration-ms="4041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[BrokenURL]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@1cd201a8]" started-at="2023-09-11T17:03:59 IST" name="quit" finished-at="2023-09-11T17:03:59 IST" duration-ms="398" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
+    </test> <!-- Validating Base URL -->
+  </suite> <!-- Suite (6) -->
+  <suite started-at="2023-09-11T17:01:35 IST" name="Suite (5)" finished-at="2023-09-11T17:03:44 IST" duration-ms="128877">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T17:01:35 IST" name="Validating Checkout" finished-at="2023-09-11T17:03:44 IST" duration-ms="128877">
+      <class name="com.bestbuy.test.MenuShopByBrand">
+        <test-method signature="selectByBrand()[pri:1, instance:com.bestbuy.test.MenuShopByBrand@768ccdc5]" started-at="2023-09-11T17:01:45 IST" name="selectByBrand" finished-at="2023-09-11T17:03:00 IST" duration-ms="74780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectByBrand -->
+      </class> <!-- com.bestbuy.test.MenuShopByBrand -->
+      <class name="com.bestbuy.test.CheckoutValidation">
+        <test-method signature="checkout()[pri:2, instance:com.bestbuy.test.CheckoutValidation@10650953]" started-at="2023-09-11T17:03:00 IST" name="checkout" finished-at="2023-09-11T17:03:43 IST" duration-ms="43503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkout -->
+      </class> <!-- com.bestbuy.test.CheckoutValidation -->
+      <class name="com.bestbuy.test.ChooseCountry">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@1991f767]" started-at="2023-09-11T17:01:35 IST" name="selectCountry" finished-at="2023-09-11T17:01:45 IST" duration-ms="9948" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+      </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@18518ccf]" started-at="2023-09-11T17:01:31 IST" name="launchURL" finished-at="2023-09-11T17:01:35 IST" duration-ms="4075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Checkout]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@18518ccf]" started-at="2023-09-11T17:03:43 IST" name="quit" finished-at="2023-09-11T17:03:44 IST" duration-ms="633" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
+    </test> <!-- Validating Checkout -->
+  </suite> <!-- Suite (5) -->
+  <suite started-at="2023-09-11T17:00:08 IST" name="Suite (4)" finished-at="2023-09-11T17:01:31 IST" duration-ms="83128">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T17:00:08 IST" name="Menu Shop By Brand" finished-at="2023-09-11T17:01:31 IST" duration-ms="83128">
+      <class name="com.bestbuy.test.MenuShopByBrand">
+        <test-method signature="selectByBrand()[pri:1, instance:com.bestbuy.test.MenuShopByBrand@9bd0fa6]" started-at="2023-09-11T17:00:18 IST" name="selectByBrand" finished-at="2023-09-11T17:01:30 IST" duration-ms="72696" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectByBrand -->
+      </class> <!-- com.bestbuy.test.MenuShopByBrand -->
+      <class name="com.bestbuy.test.ChooseCountry">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@58670130]" started-at="2023-09-11T17:00:08 IST" name="selectCountry" finished-at="2023-09-11T17:00:18 IST" duration-ms="9859" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+      </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@4bf3798b]" started-at="2023-09-11T17:00:03 IST" name="launchURL" finished-at="2023-09-11T17:00:08 IST" duration-ms="4700" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[MenuShopByBrand]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@4bf3798b]" started-at="2023-09-11T17:01:30 IST" name="quit" finished-at="2023-09-11T17:01:31 IST" duration-ms="561" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
+    </test> <!-- Menu Shop By Brand -->
+  </suite> <!-- Suite (4) -->
+  <suite started-at="2023-09-11T16:59:18 IST" name="Suite (3)" finished-at="2023-09-11T17:00:03 IST" duration-ms="45258">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T16:59:18 IST" name="Menu shop by Department" finished-at="2023-09-11T17:00:03 IST" duration-ms="45258">
+      <class name="com.bestbuy.test.ChooseCountry">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@2c7d121c]" started-at="2023-09-11T16:59:18 IST" name="selectCountry" finished-at="2023-09-11T16:59:26 IST" duration-ms="8253" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+      </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@34625ccd]" started-at="2023-09-11T16:59:14 IST" name="launchURL" finished-at="2023-09-11T16:59:18 IST" duration-ms="4133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[MenuShopByDepartment]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@34625ccd]" started-at="2023-09-11T17:00:02 IST" name="quit" finished-at="2023-09-11T17:00:03 IST" duration-ms="501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
       <class name="com.bestbuy.test.MenuShopByDepartment">
-        <test-method signature="selectByDepartment()[pri:0, instance:com.bestbuy.test.MenuShopByDepartment@2611b9a3]" started-at="2023-09-10T23:13:24 IST" name="selectByDepartment" finished-at="2023-09-10T23:13:47 IST" duration-ms="22690" status="PASS">
+        <test-method signature="selectByDepartment()[pri:0, instance:com.bestbuy.test.MenuShopByDepartment@419a20a6]" started-at="2023-09-11T16:59:26 IST" name="selectByDepartment" finished-at="2023-09-11T17:00:02 IST" duration-ms="36497" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectByDepartment -->
       </class> <!-- com.bestbuy.test.MenuShopByDepartment -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Menu shop by Department -->
+  </suite> <!-- Suite (3) -->
+  <suite started-at="2023-09-11T16:58:34 IST" name="Suite (2)" finished-at="2023-09-11T16:59:14 IST" duration-ms="39358">
+    <groups>
+    </groups>
+    <test started-at="2023-09-11T16:58:34 IST" name="Search and Add To Cart" finished-at="2023-09-11T16:59:14 IST" duration-ms="39358">
+      <class name="com.bestbuy.test.Search_ItemAddToCart">
+        <test-method signature="validatingSearchAndCart()[pri:0, instance:com.bestbuy.test.Search_ItemAddToCart@1d7f7be7]" started-at="2023-09-11T16:58:47 IST" name="validatingSearchAndCart" finished-at="2023-09-11T16:59:13 IST" duration-ms="26520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatingSearchAndCart -->
+      </class> <!-- com.bestbuy.test.Search_ItemAddToCart -->
+      <class name="com.bestbuy.test.ChooseCountry">
+        <test-method signature="selectCountry()[pri:0, instance:com.bestbuy.test.ChooseCountry@6a66a204]" started-at="2023-09-11T16:58:34 IST" name="selectCountry" finished-at="2023-09-11T16:58:47 IST" duration-ms="12370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+      </class> <!-- com.bestbuy.test.ChooseCountry -->
+      <class name="com.bestbuy.test.Hooks">
+        <test-method is-config="true" signature="launchURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:com.bestbuy.test.Hooks@44e3760b]" started-at="2023-09-11T16:58:27 IST" name="launchURL" finished-at="2023-09-11T16:58:34 IST" duration-ms="6872" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NoHeadLess]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Nocache]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SearchAddToCart]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchURL -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.bestbuy.test.Hooks@44e3760b]" started-at="2023-09-11T16:59:13 IST" name="quit" finished-at="2023-09-11T16:59:14 IST" duration-ms="446" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.bestbuy.test.Hooks -->
+    </test> <!-- Search and Add To Cart -->
+  </suite> <!-- Suite (2) -->
 </testng-results>

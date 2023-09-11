@@ -21,7 +21,7 @@ public class Sign_In {
 	@FindBy(xpath = "//button[@type = 'submit']")
 	private WebElement signIn;
 	
-	@FindBy(xpath = "//div[text() = 'Sorry, something went wrong. Please try again.']")
+	@FindBy(xpath = "//strong//child::div")
 	private WebElement errorMessage;
 	
 	public Sign_In(WebDriver driver2) {

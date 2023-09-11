@@ -15,13 +15,16 @@ public class SingUp extends BaseUtils {
 	
 	public SignUpTestCase testCase = new SignUpTestCase();
 	
-	@Test(priority = 1)
-	@Parameters({"firstName", "lastName", "mailID", "password", "mobileNumber", "errorMessagge"})
-	public void CreateNewAccount(String firstName, String lastName, String mailID, String password, String mobileNumber, String errorMessagge) {
+	@Test(priority = 2)
+	@Parameters({"firstName", "lastName", "mailID", "password", "mobileNumber", "errorMessagge", "errorMessagge2"})
+	public void CreateNewAccount(String firstName, String lastName, String mailID, String password, String mobileNumber, String errorMessagge, String errorMessagge2) {
 		
 		Reports.setTCDesc("Validating Create An Account functionality");
 		
-		elementNotVisible(pom.getHomePage().getStoreNotification());
+		if (pom.getHomePage().getStoreNotification().isDisplayed()) {
+			
+			elementNotVisible(pom.getHomePage().getStoreNotification());
+		}
 		
 		clickElement(pom.getHomePage().getAccountBtn(), testCase.getAccountPass(), testCase.getAccountFail());
 		
@@ -47,7 +50,9 @@ public class SingUp extends BaseUtils {
 		
 		try {
 			
-			if (getElementText(pom.getCreateAccount().getEmailAlredyExists()).equals(errorMessagge)) {
+			String geterror = getElementText(pom.getCreateAccount().getErrorMessage());
+			
+			if (geterror.equals(errorMessagge) || geterror.equals(errorMessagge2)) {
 				
 				Reports.reportStep(Status.FAIL, "Create Account Failed");
 				

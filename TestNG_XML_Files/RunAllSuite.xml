@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<suite-files>
+		 <suite-file path="Login.xml"/>
+		 <suite-file path="CreateAccount.xml"/>
+		 <suite-file path="SearchAddToCart.xml"/>
+		 <suite-file path="MenuShopByDepartment.xml"/> 
+		 <suite-file path="MenuShopByBrand.xml"/>
+		 <suite-file path="CheckoutValidation.xml"/>
+		 <suite-file path="BrokenURL.xml"/>
+		 <suite-file path="BottomLinks.xml"/>
+		 <suite-file path="Menu.xml"/>
+	</suite-files>
+	
+</suite> <!--
+Suite -->
