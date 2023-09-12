@@ -8,8 +8,8 @@
 	<parameter name="reportName" value="Login"/>
 	
 	<test name="Login">
-		<parameter name="errorMessage" value="Sorry, something went wrong. Please try again."/>
-		<parameter name="errorMessage2" value="Oops! The email or password did not match our records. Please try again."/>
+		<parameter name="loginErrorMessage" value="Sorry, something went wrong. Please try again."/>
+		<parameter name="loginErrorMessage2" value="Oops! The email or password did not match our records. Please try again."/>
 		<classes>
 			<class name="com.bestbuy.test.Hooks" />
 			<class name="com.bestbuy.test.ChooseCountry" />
