@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<parameter name="browser" value="Chrome"/>
+	<parameter name="headLess" value="NoHeadLess"/>
+	<parameter name="cache" value="Nocache"/>
+	<parameter name="reportName" value="CreateAccount"/>
+	
+	<test thread-count="5" name="Create New Account">
+		
+		<parameter name="firstName" value="Santhosh"/>
+		<parameter name="lastName" value="K"/>
+		<parameter name="mailID" value="harish.venkatesan120231@gmail.com"/>
+		<parameter name="password" value="423329@HarishV"/>
+		<parameter name="mobileNumber" value="8807955398"/>
+		<parameter name="errorMessagge2" value="Sorry, there was a problem creating your account."/>	
+		<parameter name="errorMessagge" value="An account with this email already exists."/>
+		
+		<classes>
+			<class name="com.bestbuy.test.Hooks" />
+			<class name="com.bestbuy.test.ChooseCountry" />
+			<class name="com.bestbuy.test.SingUp" />
+		</classes>
+	</test> <!--
+	Test -->
+</suite> <!--
+Suite -->

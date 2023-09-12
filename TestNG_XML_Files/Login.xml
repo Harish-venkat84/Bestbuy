@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<parameter name="browser" value="Chrome"/>
+	<parameter name="headLess" value="NoHeadLess"/>
+	<parameter name="cache" value="Nocache"/>
+	<parameter name="reportName" value="Login"/>
+	
+	<test name="Login">
+		<parameter name="errorMessage" value="Sorry, something went wrong. Please try again."/>
+		<parameter name="errorMessage2" value="Oops! The email or password did not match our records. Please try again."/>
+		<classes>
+			<class name="com.bestbuy.test.Hooks" />
+			<class name="com.bestbuy.test.ChooseCountry" />
+			<class name="com.bestbuy.test.LogIn" />
+		</classes>
+	</test> <!--Test -->
+	
+	
+</suite> <!--
+Suite -->

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	
+	<parameter name="browser" value="Chrome"/>
+	<parameter name="headLess" value="NoHeadLess"/>
+	<parameter name="cache" value="Nocache"/>
+	<parameter name="reportName" value="MenuShopByBrand"/>
+	
+  <test name="Menu Shop By Brand">
+    <classes>
+      <class name="com.bestbuy.test.Hooks"/>
+      <class name="com.bestbuy.test.ChooseCountry"/>
+      <class name="com.bestbuy.test.MenuShopByBrand"/>
+      <class name="com.bestbuy.utils.Reports"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
