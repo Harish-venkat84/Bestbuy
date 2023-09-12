@@ -3,16 +3,27 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <parameter name="cache" value="Nocache"/>
   <parameter name="headLess" value="NoHeadLess"/>
+<<<<<<< HEAD
   <parameter name="reportName" value="WebAutomation"/>
   <parameter name="browser" value="Chrome"/>
   <test thread-count="5" name="Login(failed)">
     <parameter name="loginErrorMessage" value="Sorry, something went wrong. Please try again."/>
+=======
+  <parameter name="browser" value="Chrome"/>
+  <test thread-count="5" name="Login(failed)">
+>>>>>>> 80c1bc270b4355122a0dbf4460046b6f7ded1d37
     <parameter name="firstName" value="Santhosh"/>
     <parameter name="lastName" value="K"/>
     <parameter name="errorMessagge" value="An account with this email already exists."/>
     <parameter name="password" value="423329@HarishV"/>
+<<<<<<< HEAD
     <parameter name="mobileNumber" value="8807955398"/>
     <parameter name="loginErrorMessage2" value="Oops! The email or password did not match our records. Please try again."/>
+=======
+    <parameter name="errorMessage2" value="Oops! The email or password did not match our records. Please try again."/>
+    <parameter name="mobileNumber" value="8807955398"/>
+    <parameter name="errorMessage" value="Sorry, something went wrong. Please try again."/>
+>>>>>>> 80c1bc270b4355122a0dbf4460046b6f7ded1d37
     <parameter name="mailID" value="harish.venkatesan120231@gmail.com"/>
     <parameter name="errorMessagge2" value="Sorry, there was a problem creating your account."/>
     <classes>

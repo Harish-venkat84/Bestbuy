@@ -12,8 +12,13 @@ import com.bestbuy.utils.Reports;
 public class LogIn extends BaseUtils{
 
 	@Test(priority = 1)
+<<<<<<< HEAD
 	@Parameters({"loginErrorMessage", "loginErrorMessage2"})
 	public void sigin(String loginErrorMessage, String loginErrorMessage2) {
+=======
+	@Parameters({"errorMessage", "errorMessage2"})
+	public void sigin(String errorMessage, String errorMessage2) {
+>>>>>>> 80c1bc270b4355122a0dbf4460046b6f7ded1d37
 		
 		LoginTestCase loginCase = new LoginTestCase();
 		
@@ -40,7 +45,11 @@ public class LogIn extends BaseUtils{
 				message = getElementText(pom.getSignIn().getErrorMessage());
 			}
 			
+<<<<<<< HEAD
 			if (message.equals(loginErrorMessage) || message.equals(loginErrorMessage2)) {
+=======
+			if (message.equals(errorMessage) || message.equals(errorMessage2)) {
+>>>>>>> 80c1bc270b4355122a0dbf4460046b6f7ded1d37
 				
 					Reports.reportStep(Status.FAIL, "login fail");
 					
@@ -49,7 +58,11 @@ public class LogIn extends BaseUtils{
 				Reports.reportStep(Status.PASS, "successfully login");
 			}
 			
+<<<<<<< HEAD
 			launchNewURL(property.getURL());
+=======
+//			launchNewURL(property.getURL());
+>>>>>>> 80c1bc270b4355122a0dbf4460046b6f7ded1d37
 		
 		}catch(Exception e) {
 			
