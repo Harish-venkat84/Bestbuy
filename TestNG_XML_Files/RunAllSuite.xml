@@ -10,13 +10,8 @@
 		 <suite-file path="MenuShopByBrand.xml"/>
 		 <suite-file path="CheckoutValidation.xml"/>
 		 <suite-file path="BrokenURL.xml"/>
-<<<<<<< HEAD
 		 <!-- <suite-file path="BottomLinks.xml"/>
 		 <suite-file path="Menu.xml"/> -->
-=======
-		 <suite-file path="BottomLinks.xml"/>
-		 <suite-file path="Menu.xml"/>
->>>>>>> 80c1bc270b4355122a0dbf4460046b6f7ded1d37
 	</suite-files>
 	
 </suite> <!--
